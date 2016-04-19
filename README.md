@@ -14,4 +14,7 @@ void updateInfo ()
   energy --; //load function needed
 }
 
-void loadEvent(); //loads event from events.txt
+void loadEvent() //loads event from events.txt
+{
+  
+}
