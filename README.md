@@ -1,4 +1,5 @@
 #include "dork.h"
+#include "game.h"
 
   int rollDice (int roll)
   {
@@ -17,6 +18,10 @@ void play(Display& obj) {
   if (y){
     int roll;
     int rollDice(roll);
+    int steps = obj.getSteps();
+    for (int i = steps; i<(steps+roll); i++){
+      string event = events(int a, int b);//initialized event function, inputs can change
+      printw("%s", event.c_str);
     updateInfo(obj);
     }
   else if (n) {
@@ -24,5 +29,4 @@ void play(Display& obj) {
   else {
     printw("Invalid response");
 }
-
 
