@@ -22,7 +22,7 @@ void play(Display& obj) {
   else if (n) {
     save(); //save function here
   else {
-    printf("Invalid response");
+    printw("Invalid response");
 }
 
 
