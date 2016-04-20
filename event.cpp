@@ -1,7 +1,7 @@
 #include "dork.h"
 #include "game.h"
 
-string event(int a, int b){
+string events(Display& in_obj, int a, int b){
 
 ifstream eventsfile("events.txt");
 if (!eventsfile)
@@ -11,7 +11,10 @@ else
     scanw(line);
     size_t found = line.find(a,b);
     if (found != string::npos){
+      //adds/subtracts energy, steps, etc
       return line;
     }
+  }
+
     //else return null?
 }
