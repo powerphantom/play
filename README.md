@@ -15,16 +15,18 @@
     energy --;
   }
 void play(Display& obj) {
-  if (y){
+  printw("Would you like to roll?");
+  char resp= getch();
+  if (resp == Y||y){
     int roll;
     int rollDice(roll);
     int steps = obj.getSteps();
     for (int i = steps; i<(steps+roll); i++){
-      string event = events(int a, int b);//initialized event function, inputs can change
+      string event = events(obj, int a, int b);//initialized event function, inputs can change
       printw("%s", event.c_str);
     updateInfo(obj);
     }
-  else if (n) {
+  else if (resp == N||n) {
     save(); //save function here
   else {
     printw("Invalid response");
